@@ -28,7 +28,7 @@ export default function HomePlans() {
                             <p>Great security and support</p>
                         </div>
                         <Link href="/signup">
-                            <a className="btn btn--light-blue plan__cta-btn">Try for Free</a>
+                            <a className="btn btn--light-blue plan__cta-btn">Subscribe</a>
                         </Link>
                     </motion.div>
                     <motion.div
@@ -52,7 +52,7 @@ export default function HomePlans() {
                             <p>More control and insights</p>
                         </div>
                         <Link href="/signup">
-                            <a className="btn btn--white plan__cta-btn">Try for Free</a>
+                            <a className="btn btn--white plan__cta-btn">Subscribe</a>
                         </Link>
                     </motion.div>
                     <motion.div
@@ -76,7 +76,7 @@ export default function HomePlans() {
                             <p>VIP support</p>
                         </div>
                         <Link href="/signup">
-                            <a className="btn btn--light-blue plan__cta-btn">Try for Free</a>
+                            <a className="btn btn--light-blue plan__cta-btn">Subscribe</a>
                         </Link>
                     </motion.div>
                 </div>

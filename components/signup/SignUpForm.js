@@ -1,17 +1,48 @@
 import React from 'react'
 import * as Yup from 'yup'
 import { Formik, Form, Field } from 'formik'
-import PlanSelector from './PlanSelector'
 import { motion } from 'framer-motion'
-
+import { useState } from 'react'
+import { supabase } from '../../utils/supabaseClient'
+import { Auth, Typography, Button } from '@supabase/ui'
 const SignupSchema = Yup.object({
     name: Yup.string().required('Required'),
     emailAddress: Yup.string().email('Invalid email address').required('Required'),
     phoneNumber: Yup.string().required('Required'),
     companyName: Yup.string().required('Required')
 });
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
+const Container = (props) => {
+  const { user } = Auth.useUser()
+  if (user)
+    return (
+      <>
+        <Typography.Text>Signed in: {user.email}</Typography.Text>
+        <Button block onClick={() => props.supabaseClient.auth.signOut()}>
+          Sign out
+        </Button>
+      </>
+    )
+  return props.children
+}
 export default function SignUpForm() {
+    const [loading, setLoading] = useState(false)
+    const [email, setEmail] = useState('')
+  
+    const handleLogin = async (email) => {
+      try {
+        setLoading(true)
+        const { error } = await supabase.auth.signIn({ email })
+        if (error) throw error
+        alert('Check your email for the login link!')
+      } catch (error) {
+        alert(error.error_description || error.message)
+      } finally {
+        setLoading(false)
+      }
+    }
 
     return (
         <motion.section
@@ -42,17 +73,13 @@ export default function SignUpForm() {
             >
                 {({ errors, touched }) => (
                     <Form className="signup-form">
-                        <label className="sr-only" htmlFor="name">name</label>
-                        <Field name="name" placeholder="Name" className={errors.name && touched.name ? 'error' : ''} />
-                        <label className="sr-only" htmlFor="emailAddress">Email Address</label>
-                        <Field name="emailAddress" placeholder="Email Address" className={errors.emailAddress && touched.emailAddress ? 'error' : ''} />
-                        <label className="sr-only" htmlFor="phoneNumber">Phone Number</label>
-                        <PlanSelector />
-                        <Field name="phoneNumber" placeholder="Phone Number" className={errors.phoneNumber && touched.phoneNumber ? 'error' : ''} />
-                        <label className="sr-only" htmlFor="companyName">Company</label>
-                        <Field name="companyName" placeholder="Company" className={errors.companyName && touched.companyName ? 'error' : ''} />
-                        <button className="btn btn--blue btn--blue--signup" type="submit">Get on the list</button>
+                      
+                          <Auth.UserContextProvider supabaseClient={supabase}  >
+                            
+        <Auth supabaseClient={supabase} providers={['google', 'facebook', 'github']} socialColors={true}  />
+    </Auth.UserContextProvider>
                     </Form>
+                    
                 )}
             </Formik>
         </motion.section>
