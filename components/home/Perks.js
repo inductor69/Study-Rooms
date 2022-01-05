@@ -5,16 +5,15 @@ export default function Perks() {
         <section className="home-hero">
             <div className="container container--section">
                 <motion.div
-                    initial={{ opacity: 0, y: 90 }}
+                    initial={{ opacity: 0, y: -90 }}
                     animate={{
                         opacity: 1, y: 0,
                         transition: {
                             type: "spring"
                         }
                     }}
-                    transition={{ duration: 0.5 }}
-                    className="">
-                   <p className='t-p  home-hero__content__body'>The benefits of studying online </p>
+                    transition={{ duration: 0.2 }}>
+                   <p className='t-cover  '>The benefits of studying online </p>
                     <h2 className="t-h2s home-hero__content__body">It's way more than a study rooom</h2>
                    <div className='perks-container'>
                         <div>

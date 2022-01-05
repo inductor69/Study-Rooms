@@ -128,7 +128,10 @@
   .perks-container{
     display: block;
     margin:0 auto;
-    max-width: 60%;
+    @media (max-width:650px){
+      max-width: 100%;
+    }
+    max-width: 70%;
     @media (min-width: 980px) {
       display: flex;
       align-items: center;
@@ -164,11 +167,30 @@
   font-weight: var(--weight-bold);
   text-align: center;
 }
-.t-p {
+.t-cover {
   text-align: center;
   font-size: 1.9rem;
   letter-spacing: 0;
+  margin-top: 15rem;
   font-weight: 300;
   color:var(--color-red);
 
+}
+
+
+
+
+
+
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background:transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  max-height: 100vh;
+  padding: 0 3rem;
+  margin-bottom: 30rem;
 }
