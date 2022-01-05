@@ -4,12 +4,40 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 export default function Institutions() {
+    const animation = { duration: 12000, easing: (t) => t }
+
     const [sliderRef] = useKeenSlider({
         loop: true,
         rtl: true,
+        renderMode: "performance",
         
+        created(s) {
+            s.moveToIdx(-5, true, animation)
+          },
+          updated(s) {
+            s.moveToIdx(s.track.details.abs - 5, true, animation)
+          },
+          animationEnded(s) {
+            s.moveToIdx(s.track.details.abs - 5, true, animation)
+          },
+        breakpoints:{
+            '(min-width:300px) and (max-width: 800px)':{
+                slides:{
+                    perView:2,
+                    spacing: 10,
+                },
+            },
+            '(min-width:800px) and (max-width: 1150px)':{
+                slides:{
+                    perView:3,
+                    spacing: 10,
+                },
+            },
+            
+        },
+
         slides: {
-          perView: 3,
+          perView: 4,
           spacing: 10,
         },
       })
