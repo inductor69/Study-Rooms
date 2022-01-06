@@ -185,7 +185,9 @@ color:var(--color-red);
 z-index: 4;
 
 }
-
+.inst{
+  margin: 15rem auto;
+}
 [class^="number-slide"],
 [class*=" number-slide"] {
 background:transparent;
@@ -195,4 +197,5 @@ justify-content: center;
 color: #fff;
 max-height: 100vh;
 padding: 0 3rem;
+
 }
