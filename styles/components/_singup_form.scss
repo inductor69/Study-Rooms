@@ -15,9 +15,8 @@
       margin: 0;
       margin-left: auto;
     }
-  
+
     input {
-      font-size: 1.6rem;
     line-height: 2.8rem;
     padding-left: 4.6rem;
       padding-bottom: 1.5rem;
@@ -28,11 +27,11 @@
         outline: var(--outline);
         border-color: transparent;
       }
-  
+
       &::placeholder {
         opacity: .50;
       }
-  
+
       &.error {
         color: var(--color-red);
         background-size: 2rem 2rem;
@@ -54,19 +53,19 @@
       margin-bottom: 2.4rem;
     }
   }
-  
+
   .plan-selector-container {
     position: relative;
     margin-bottom: 2.4rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #BABDCA;
-  
+
     .plan-selector {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-  
+
       &__arrow {
         width: 5.9rem;
         height: 2.8rem;
@@ -79,10 +78,10 @@
           transform: rotate(-180deg);
         }
       }
-  
+
       &__menu {
         display: none;
-  
+
         &.active {
           left: 0;
           z-index: 5;
@@ -99,7 +98,7 @@
           border: 1px solid rgba(51,57,80,0.15);
           box-shadow: 0 5rem 5rem -2.5rem rgba(75,92,154,0.75);
         }
-  
+
         &__item {
           display: flex;
           align-items: center;
@@ -111,7 +110,7 @@
             opacity: .40;
             margin-left: .8rem;
           }
-  
+
           &.selected::after {
             content: '';
             width: 2.8rem;
@@ -128,7 +127,7 @@
           border-bottom: 1px solid #BABDCA;
         }
       }
-  
+
       &__plan {
         font-size: 1.6rem;
         line-height: 2.8rem;
@@ -141,9 +140,25 @@
         }
       }
     }
-  } 
+  }
 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-5%); }
       to { opacity: 1; transform: translateY(0); }
-  } 
+  }
+
+.sbui-divider>span, .sbui-auth-label,.sbui-btn--large{
+    // Style here apply to component that's imported from libs
+    font-size: 1.7rem !important;
+  }
+  .sbui-formlayout__label{
+    font-size: 1.5rem !important;
+  }
+  .sbui-checkbox-container--medium ,.sbui-checkbox__label-container__label__span, a.sbui-typography-link
+    {
+    font-size: 1.3rem !important;
+  }
+  .sbui-btn-default{
+    font-size: 1.2rem !important;
+
+  }

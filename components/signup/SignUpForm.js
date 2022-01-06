@@ -20,7 +20,7 @@ const Container = (props) => {
     return (
       <>
         <Typography.Text>Signed in: {user.email}</Typography.Text>
-        <Button block onClick={() => props.supabaseClient.auth.signOut()}>
+        <Button  block onClick={() => props.supabaseClient.auth.signOut()}>
           Sign out
         </Button>
       </>
@@ -30,7 +30,7 @@ const Container = (props) => {
 export default function SignUpForm() {
     const [loading, setLoading] = useState(false)
     const [email, setEmail] = useState('')
-  
+
     const handleLogin = async (email) => {
       try {
         setLoading(true)
@@ -73,13 +73,13 @@ export default function SignUpForm() {
             >
                 {({ errors, touched }) => (
                     <Form className="signup-form">
-                      
+
                           <Auth.UserContextProvider supabaseClient={supabase}  >
-                            
-        <Auth supabaseClient={supabase} providers={['google', 'facebook', 'github']} socialColors={true}  />
+
+        <Auth  supabaseClient={supabase} providers={['google', 'facebook', 'github']} socialColors={true}  />
     </Auth.UserContextProvider>
                     </Form>
-                    
+
                 )}
             </Formik>
         </motion.section>
