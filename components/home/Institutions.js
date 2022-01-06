@@ -4,13 +4,13 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 export default function Institutions() {
-    const animation = { duration: 12000, easing: (t) => t }
+    const animation = { duration: 10000, easing: (t) => t }
 
     const [sliderRef] = useKeenSlider({
         loop: true,
         rtl: true,
         renderMode: "performance",
-        
+
         created(s) {
             s.moveToIdx(-5, true, animation)
           },
@@ -33,7 +33,7 @@ export default function Institutions() {
                     spacing: 10,
                 },
             },
-            
+
         },
 
         slides: {
@@ -41,7 +41,7 @@ export default function Institutions() {
           spacing: 10,
         },
       })
-    
+
     return (
         <section className="">
         <div className="">
@@ -54,7 +54,7 @@ export default function Institutions() {
                     }
                 }}
                 transition={{ duration: 0.5 }}
-                className="">
+                className="inst">
                     <h2 className="t-h2s home-hero__content__body">Used by hundreds of students internationally</h2>
 
                 <div ref={sliderRef} className="keen-slider">
@@ -70,17 +70,11 @@ export default function Institutions() {
                     <img className="keen-slider__slide number-slide10"src='/assets/institutions/stanford.png'/>
                     <img className="keen-slider__slide number-slide11"src='/assets/institutions/toronto.png'/>
                     <img className="keen-slider__slide number-slide12"src='/assets/institutions/yale.png'/>
-                {/* <div className="keen-slider__slide number-slide1">1</div>
-      <div className="keen-slider__slide number-slide2">2</div>
-      <div className="keen-slider__slide number-slide3">3</div>
-      <div className="keen-slider__slide number-slide4">4</div>
-      <div className="keen-slider__slide number-slide5">5</div>
-      <div className="keen-slider__slide number-slide6">6</div> */}
                 </div>
-                
+
             </motion.div>
-            
-            
+
+
         </div>
     </section>
     )

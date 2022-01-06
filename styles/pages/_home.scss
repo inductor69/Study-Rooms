@@ -1,5 +1,5 @@
 .home-hero {
-    margin-top: 8rem;
+    margin-top: 5rem;
     padding: 0 2.4rem;
     @media (min-width: 768px) {
       margin-top: 2.7rem;
@@ -14,45 +14,42 @@
     @media (min-height: 700px) and (min-width: 1024px) {
       margin-top: 10.2rem;
     }
-  
+
+
     .container--home {
       display: flex;
       flex-direction: column-reverse;
-      @media (min-width: 768px) {
+
+      @media (min-width: 1024px) {
         flex-direction: row;
         justify-content: space-between;
-      }
-      @media (min-width: 1024px) {
-        align-items: center;
       }
       @media (min-width: 1280px) {
         align-items: flex-start;
       }
     }
-  
+
     &__content {
       z-index: 10;
       position: relative;
-      margin-top: 5.9rem;
+margin-top: 0;
       text-align: center;
-      @media (min-width: 768px) {
-        margin-top: 0;
-        width: 44.922vw;
-        text-align: left;
-      }
+
       @media (min-width: 1024px) {
+        text-align: left;
+        margin-top: 9rem;
         max-width: 54rem;
       }
       @media (min-width: 1280px) {
-        margin-top: 7.2rem;
+
       }
-  
+
       &__heading {
         @media (min-width: 1024px) {
           letter-spacing: 0.06px;
         }
       }
-  
+
       &__body {
         margin: 2.4rem 0;
         @media (min-width: 1024px) {
@@ -60,30 +57,40 @@
           letter-spacing: .06px;
         }
       }
+
     }
-  
+.home-hero__content{
+  @media (max-width: 1024px) {
+
+    margin-top: -5rem;
+  }
+}
     &__image {
-      width: 45.6vw;
+
       display: flex;
       margin: 0 auto;
       align-items: center;
       img {
         width: 100%;
         @media (min-width: 1024px) {
-          width: 111%;
-          transform: translateX(-2.5rem);
+
+          transform: translateX(2.5rem);
+        }
+        @media (max-width: 1024px) {
+
+          transform:translateY(-2rem);
         }
       }
-  
+
       @media (min-width: 768px) {
-        width: 36.589vw;
+        width: 100%;
         margin: 0 0 0 auto;
       }
       @media (min-width: 1024px) {
-        max-width: 47.5rem;
+        max-width: 60rem;
       }
     }
-  } 
+  }
 
   .home-plans {
     margin-top: 10rem;
@@ -98,7 +105,7 @@
     @media (min-width: 1200px) {
       margin-top: 11rem;
     }
-  
+
     &::before {
       top: 0;
       left: 0;
@@ -119,13 +126,13 @@
       position: absolute;
       background-color: var(--color-black);
     }
-  
+
     // cover the counter background
     .container--home-plans {
       z-index: 10;
       position: relative;
     }
-  
+
     .plans {
       display: grid;
       row-gap: 3.2rem;
@@ -140,7 +147,7 @@
         column-gap: 3rem;
         grid-template-columns: repeat(3, 1fr);
       }
-  
+
       .plan {
         padding: 4rem 0;
         text-align: center;
@@ -152,7 +159,7 @@
           text-align: left;
           grid-template-columns: repeat(2, 1fr);
         }
-  
+
         // two colors of plan card
         &--white {
           background-color: var(--color-white);
@@ -170,7 +177,7 @@
             opacity: .75;
           }
         }
-  
+
         // basic, pro, ultimate
         &__type {
           margin-bottom: 4rem;
@@ -203,7 +210,7 @@
             grid-column: 2/3;
             align-self: center;
           }
-  
+
           & > p:not(:last-of-type) {
             margin-bottom: 1.6rem;
           }
@@ -224,7 +231,7 @@
       }
     }
   }
-  
+
   .home-countdown {
     text-align: center;
     padding-top: 10rem;
@@ -239,7 +246,7 @@
       padding-left: 3.9rem;
       padding-bottom: 9.1rem;
     }
-  
+
     .container--countdown {
       z-index: 1;
     position: relative;
@@ -249,7 +256,7 @@
         justify-content: space-between;
       }
     }
-  
+
     .countdown__info {
       margin: 0 auto;
       @media (min-width: 1200px) {
