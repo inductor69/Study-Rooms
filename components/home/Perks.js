@@ -17,25 +17,25 @@ export default function Perks() {
                     <h2 className="t-h2s home-hero__content__body">It's way more than a study rooom</h2>
                    <div className='perks-container'>
                         <div>
-                        <img src="/assets/svgs/p3.svg" alt="home hero" />
+                        <img src="/assets/images/p1.png" alt="home hero" />
                         <h2 className="t-hs">It's motivating & scientifically proven</h2>
                         <p className='t-body1 t-light-gray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
                         </div>
                         <div>
-                        <img src="/assets/svgs/p16.svg" alt="home hero" />
+                        <img src="/assets/images/p2.png" alt="home hero" />
                         <h2 className="t-hs">It's a 24/7 supportive community</h2>
                         <p className='t-body1 t-light-gray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
                         </div>
                         <div>
-                        <img src="/assets/svgs/p14.svg" alt="home hero" />
+                        <img src="/assets/images/p3.png" alt="home hero" />
                         <h2 className="t-hs">It's more than effective - it's fun</h2>
                         <p className='t-body1 t-light-gray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
                         </div>
                    </div>
 
                 </motion.div>
-                
-                
+
+
             </div>
         </section>
     )

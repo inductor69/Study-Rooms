@@ -4,13 +4,13 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 export default function Institutions() {
-    const animation = { duration: 12000, easing: (t) => t }
+    const animation = { duration: 10000, easing: (t) => t }
 
     const [sliderRef] = useKeenSlider({
         loop: true,
         rtl: true,
         renderMode: "performance",
-        
+
         created(s) {
             s.moveToIdx(-5, true, animation)
           },
@@ -33,7 +33,7 @@ export default function Institutions() {
                     spacing: 10,
                 },
             },
-            
+
         },
 
         slides: {
@@ -41,7 +41,7 @@ export default function Institutions() {
           spacing: 10,
         },
       })
-    
+
     return (
         <section className="">
         <div className="">
@@ -77,10 +77,10 @@ export default function Institutions() {
       <div className="keen-slider__slide number-slide5">5</div>
       <div className="keen-slider__slide number-slide6">6</div> */}
                 </div>
-                
+
             </motion.div>
-            
-            
+
+
         </div>
     </section>
     )

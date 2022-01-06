@@ -1,4 +1,4 @@
-  
+
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -23,16 +23,16 @@ export default function HomeHero() {
                     </Link>
                 </motion.div>
                 <motion.div
-                    initial={{ opacity: 0, y: -90 }}
+                    initial={{ opacity: 0, y: -150 }}
                     animate={{
-                        opacity: 1, y: 0,
+                        opacity: 1, y: -80,
                         transition: {
                             type: "spring"
                         }
                     }}
                     transition={{ duration: 0.3 }}
                     className="home-hero__image">
-                    <img src="/assets/home/illustration-charts-v2.svg" alt="home hero" />
+                    <img src="/assets/animation.gif" className='lol' alt="home hero" />
                 </motion.div>
             </div>
         </section>

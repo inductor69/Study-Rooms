@@ -24,7 +24,7 @@ t-blue {
   line-height: 4.8rem;
   font-weight: var(--weight-bold);
   color:#EEEEEE;
-  
+
 @media (min-width: 1024px) {
   font-size: 5.6rem;
   line-height: 6.4rem;
@@ -63,7 +63,7 @@ t-blue {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-weight: var(--weight-bold);
-} 
+}
 
 .t-price {
   letter-spacing: 0;
@@ -123,7 +123,7 @@ t-blue {
   .t-counter-unit {
     color: var(--color-dark-gray);
   }
-} 
+}
 
 .perks-container{
   display: block;
@@ -181,7 +181,10 @@ color:var(--color-red);
 
 
 
+.keen-slider{
+z-index: 4;
 
+}
 
 [class^="number-slide"],
 [class*=" number-slide"] {
@@ -192,5 +195,4 @@ justify-content: center;
 color: #fff;
 max-height: 100vh;
 padding: 0 3rem;
-margin-bottom: 25rem;
 }
