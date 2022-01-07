@@ -19,7 +19,7 @@
     input {
     line-height: 2.8rem;
     padding-left: 4.6rem;
-      padding-bottom: 1.5rem;
+
       color: var(--color-dark-gray);
       border-bottom: 1px solid #BABDCA;
 
@@ -151,7 +151,7 @@
     // Style here apply to component that's imported from libs
     font-size: 1.7rem !important;
   }
-  .sbui-formlayout__label{
+  .sbui-formlayout__label,.sbui-input--medium{
     font-size: 1.5rem !important;
   }
   .sbui-checkbox-container--medium ,.sbui-checkbox__label-container__label__span, a.sbui-typography-link

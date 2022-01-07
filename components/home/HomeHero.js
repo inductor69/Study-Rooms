@@ -24,26 +24,23 @@ export default function HomeHero() {
                     </Link>
                 </motion.div>
                 <motion.div
-                    initial={{ opacity: 0, y: -150 }}
+                    initial={{ opacity: 0, y: -90 }}
                     animate={{
-                        opacity: 1, y: -80,
+                        opacity: 1, y: 0,
                         transition: {
                             type: "spring"
                         }
                     }}
                     transition={{ duration: 0.3 }}
                     className="home-hero__image">
-                         <div className="home-hero__image">
+                    <Player
+                        autoplay
+                        loop
+                        src="https://assets2.lottiefiles.com/packages/lf20_gqn5t2x3/lf30_editor_wowxxd0p.json"
+                        className='lolol'
+                    >
+                    </Player>
 
-                                            <Player
-  autoplay
-  loop
-  src="https://assets2.lottiefiles.com/packages/lf20_gqn5t2x3/lf30_editor_wowxxd0p.json"
-  style={{ height: '600px', width: '600px' }}
-  className='lol'
->
-</Player>
-</div>
                 </motion.div>
             </div>
         </section>
