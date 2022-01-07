@@ -20,7 +20,7 @@ const Container = (props) => {
     return (
       <>
         <Typography.Text>Signed in: {user.email}</Typography.Text>
-        <Button block onClick={() => props.supabaseClient.auth.signOut()}>
+        <Button  block onClick={() => props.supabaseClient.auth.signOut()}>
           Sign out
         </Button>
       </>
@@ -76,7 +76,11 @@ export default function SignUpForm() {
 
                           <Auth.UserContextProvider supabaseClient={supabase}  >
 
+<<<<<<< HEAD
         <Auth supabaseClient={supabase} providers={['google', 'facebook', 'github']} socialColors={true}  />
+=======
+        <Auth  supabaseClient={supabase} providers={['google', 'facebook', 'github']} socialColors={true}  />
+>>>>>>> 6d29efcf1d2aab3a336e9996577f5c8b96d992ad
     </Auth.UserContextProvider>
                     </Form>
 
