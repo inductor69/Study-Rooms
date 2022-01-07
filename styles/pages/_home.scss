@@ -335,18 +335,20 @@ margin-top: 0;
   align-items: center;
 }
 .app {
-  background-color:#25273ac7;
+  // background-color:#25273ac7;
   position: fixed;
   left:0;
     right:0;
-  background: rgba(0, 0, 0, 0.41);
+  // background: transparent;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 20px 20px 50px rgba(0,0,0, 0.5);
   text-align:center;
   display: flex;
-  padding:1rem;
+  padding:3.5rem 1rem;
   justify-content: space-between;
   width: 100% ;
   border-radius:0 0 14px 14px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   font-size: 1.4rem;
   @media (min-width:600px){
@@ -362,7 +364,7 @@ margin-top: 0;
 .header-menu a {
   padding: 1.3rem 2rem;
   text-decoration: none;
-  color: rgb(113 119 144 / 78%);
+  color: var(--color-red);
   border-bottom: 2px solid transparent;
   transition: 0.3s;
 }
@@ -376,7 +378,7 @@ a {
   padding: 1.4rem 2rem;
   }
   text-decoration: none;
-  color: rgb(113 119 144 / 78%);
+  color: var(--color-red);
   border-bottom: 2px solid transparent;
   transition: 0.3s;
 }

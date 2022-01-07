@@ -18,7 +18,7 @@ function fun1(ps){
             <Link className={fun1('/apps')} href='/apps' >About</Link>
             <Link className={fun1('/discover')} href='/discover'>Discover</Link>
             <Link className={fun1('/pricing')} href='/pricing'>Pricing</Link>
-            <Link className={fun1('/signup')} href='/signup'>Sign UP</Link>
+            <Link className={fun1('/signup')} href='/signup'>Signup</Link>
 
         </div>
 
