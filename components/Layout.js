@@ -2,6 +2,7 @@ import Head from 'next/head'
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import Header from '../components/Header'
+import { Navbar } from './home/Navbar'
 
 export default function Layout({
     children,
@@ -24,6 +25,8 @@ export default function Layout({
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet" />
             </Head>
+            <Navbar/>
+
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
