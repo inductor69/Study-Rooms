@@ -76,11 +76,10 @@ export default function SignUpForm() {
 
                           <Auth.UserContextProvider supabaseClient={supabase}  >
 
-<<<<<<< HEAD
         <Auth supabaseClient={supabase} providers={['google', 'facebook', 'github']} socialColors={true}  />
-=======
+
         <Auth  supabaseClient={supabase} providers={['google', 'facebook', 'github']} socialColors={true}  />
->>>>>>> 6d29efcf1d2aab3a336e9996577f5c8b96d992ad
+        <Auth  supabaseClient={supabase} providers={['google', 'facebook', 'github']} socialColors={true}  />
     </Auth.UserContextProvider>
                     </Form>
 
