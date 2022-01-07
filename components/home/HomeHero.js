@@ -19,7 +19,7 @@ export default function HomeHero() {
                     className="home-hero__content">
                     <h1 className="t-h1 home-hero__content__heading">Boost Your Focus</h1>
                     <p className="t-body1 t-light-gray home-hero__content__body">Join our 24/7 virtual Focus Rooms and study with the world's most productive community of students.</p>
-                    <Link href="/signup">
+                    <Link href="/dashboard">
                         <a className="btn btn--blue btn-shadow-blue">Get Started</a>
                     </Link>
                 </motion.div>

@@ -4,6 +4,7 @@ import HomePlans from '../components/home/HomePlans'
 import HomeCountDown from '../components/home/HomeCountDown'
 import Perks from '../components/home/Perks'
 import Institutions from '../components/home/Institutions'
+import DashBoard from '../components/dashboard/dashboard'
 
 export default function Home() {
   return (
