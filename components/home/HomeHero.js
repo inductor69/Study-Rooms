@@ -1,6 +1,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 export default function HomeHero() {
     return (
@@ -32,7 +33,17 @@ export default function HomeHero() {
                     }}
                     transition={{ duration: 0.3 }}
                     className="home-hero__image">
-                    <img src="/assets/animation.gif" className='lol' alt="home hero" />
+                         <div className="home-hero__image">
+
+                                            <Player
+  autoplay
+  loop
+  src="https://assets2.lottiefiles.com/packages/lf20_gqn5t2x3/lf30_editor_wowxxd0p.json"
+  style={{ height: '600px', width: '600px' }}
+  className='lol'
+>
+</Player>
+</div>
                 </motion.div>
             </div>
         </section>
