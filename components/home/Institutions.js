@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import React from "react";
+import Image from "next/image";
 
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
@@ -58,18 +59,18 @@ export default function Institutions() {
                     <h2 className="t-h2s home-hero__content__body">Used by hundreds of students internationally</h2>
 
                 <div ref={sliderRef} className="keen-slider">
-                    <img className="keen-slider__slide number-slide1" src='/assets/institutions/cornell.png'/>
-                    <img className="keen-slider__slide number-slide2"src='/assets/institutions/cambridge.png'/>
-                    <img className="keen-slider__slide number-slide3"src='/assets/institutions/harvard.png'/>
-                    <img className="keen-slider__slide number-slide4"src='/assets/institutions/imperial.png'/>
-                    <img className="keen-slider__slide number-slide5"src='/assets/institutions/lse.png'/>
-                    <img className="keen-slider__slide number-slide6"src='/assets/institutions/melbourne.png'/>
-                    <img className="keen-slider__slide number-slide7"src='/assets/institutions/mit.png'/>
-                    <img className="keen-slider__slide number-slide8"src='/assets/institutions/oxford.png'/>
-                    <img className="keen-slider__slide number-slide9" src='/assets/institutions/princeton.png'/>
-                    <img className="keen-slider__slide number-slide10"src='/assets/institutions/stanford.png'/>
-                    <img className="keen-slider__slide number-slide11"src='/assets/institutions/toronto.png'/>
-                    <img className="keen-slider__slide number-slide12"src='/assets/institutions/yale.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide1" src='/assets/institutions/cornell.png'/>
+                    <motion.img layout='fill'className="keen-slider__slide number-slide2"src='/assets/institutions/cambridge.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide3"src='/assets/institutions/harvard.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide4"src='/assets/institutions/imperial.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide5"src='/assets/institutions/lse.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide6"src='/assets/institutions/melbourne.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide7"src='/assets/institutions/mit.png'/>
+                    <motion.img layout='fill'  className="keen-slider__slide number-slide8"src='/assets/institutions/oxford.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide9" src='/assets/institutions/princeton.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide10"src='/assets/institutions/stanford.png'/>
+                    <motion.img layout='fill' className="keen-slider__slide number-slide11"src='/assets/institutions/toronto.png'/>
+                    <motion.img  layout='fill' className="keen-slider__slide number-slide12"src='/assets/institutions/yale.png'/>
                 </div>
 
             </motion.div>
