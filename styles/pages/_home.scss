@@ -67,14 +67,6 @@ margin-top: 0;
 }
     &__image {
       display: flex;
-      margin: 0 auto;
-      align-items: center;
-
-      img {
-        width: 100%;
-
-      }
-
       @media (min-width: 768px) {
         width: 100%;
       }
@@ -85,9 +77,13 @@ margin-top: 0;
   }
 .home-hero__image>div{
   width: 100%;
-  text-align: right;
   @media (max-width:1024px){
     margin-bottom: 3.3rem;
+  }
+}
+.home-hero__image>div>div{
+  @media (min-width:1024px){
+    float: right;
   }
 }
   .home-plans {
