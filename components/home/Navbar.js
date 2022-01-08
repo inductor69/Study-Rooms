@@ -13,7 +13,7 @@ function fun1(ps){
     return (
 
         <div className="container container--home header app">
-        <Link className='logo' href='#'>LOGO</Link>
+        <Link className='logo' href='/'>LOGO</Link>
         <div className="header-menu">
             <Link className={fun1('/apps')} href='/apps' >About</Link>
             <Link className={fun1('/discover')} href='/discover'>Discover</Link>
