@@ -4,7 +4,7 @@ import Sidebar from './Sidebar'
 import { ResponsiveSidebar } from '../components/Drawer'
 const Layout1 = ({ children }) => {
   return (
-<div style={{fontSize:"100%"}}>
+<div style={{fontSize:"160%"}}>
  <ChakraProvider resetCSS theme={theme}>
       <Flex h='100vh'>
         <Container
