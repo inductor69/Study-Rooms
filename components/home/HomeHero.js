@@ -6,6 +6,8 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player';
 export default function HomeHero() {
     return (
         <section className="home-hero">
+            <div className='containerr'
+>         <div className='glass-rect'>
             <div className="container container--home">
                 <motion.div
                     initial={{ opacity: 0, y: 90 }}
@@ -42,6 +44,8 @@ export default function HomeHero() {
                     </Player>
 
                 </motion.div>
+            </div>
+            </div>
             </div>
         </section>
     )
