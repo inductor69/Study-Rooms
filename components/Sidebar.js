@@ -31,7 +31,7 @@ const Sidebar = () => {
         </Box>
         <Box height='80vh' overflowY='auto'>
           <Stack w='100%' py={5}>
-            <Link href='/'>
+            <Link href='/dashboard'>
               <a>
                 <Icon mr={2} as={MdDashboard} />
                 Dashboard

@@ -1,8 +1,8 @@
 import { Card } from '../components/Card/Card'
-import { AccountInfoProps } from '../data/AccountInfoProps'
-import { ExperienceProps } from '../data/ExperienceProps'
-import { UserDetailsProps } from '../data/UserDetailsProps'
-import { NotificationProps } from '../data/NotificationsProps'
+import { AccountInfoProps } from '../components/data/AccountInfoProps'
+import { ExperienceProps } from '../components/data/ExperienceProps'
+import { UserDetailsProps } from '../components/data/UserDetailsProps'
+import { NotificationProps } from '../components/data/NotificationsProps'
 import { CardContent } from '../components/Card/CardContent'
 import { CardHeader } from '../components/Card/CardHeader'
 import { HiPencilAlt } from 'react-icons/hi'
@@ -16,9 +16,10 @@ import {
   IconButton,
   SimpleGrid,
 } from '@chakra-ui/react'
+import Layout1 from '../components/Layout1'
 export default function cards() {
   return (
-    <>
+    <Layout1>
       <Box h='100vh'>
         <Flex
           color='dark'
@@ -157,6 +158,6 @@ export default function cards() {
           </SimpleGrid>
         </Flex>
       </Box>
-    </>
+    </Layout1>
   )
 }

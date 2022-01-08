@@ -1,9 +1,11 @@
-import { Box, Flex, Container } from '@chakra-ui/react'
+import { Box, Flex, Container, ChakraProvider } from '@chakra-ui/react'
+import theme from '../styles/theme'
 import Sidebar from './Sidebar'
 import { ResponsiveSidebar } from '../components/Drawer'
 const Layout1 = ({ children }) => {
   return (
-    <>
+
+    <ChakraProvider resetCSS theme={theme}>
       <Flex h='100vh'>
         <Container
           m={0}
@@ -30,7 +32,7 @@ const Layout1 = ({ children }) => {
           </Box>
         </Container>
       </Flex>
-    </>
+    </ChakraProvider>
   )
 }
 

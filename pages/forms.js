@@ -9,10 +9,11 @@ import {
   FormLabel,
 } from '@chakra-ui/react'
 import { AccountSettings, SignIn } from '../components/Forms'
+import Layout1 from '../components/Layout1'
 
 export default function forms() {
   return (
-    <div>
+    <Layout1>
       <Box h='100%'>
         <Flex
           color='dark'
@@ -29,6 +30,6 @@ export default function forms() {
           </Flex>
         </Flex>
       </Box>
-    </div>
+    </Layout1>
   )
 }
