@@ -4,8 +4,8 @@ import Sidebar from './Sidebar'
 import { ResponsiveSidebar } from '../components/Drawer'
 const Layout1 = ({ children }) => {
   return (
-
-    <ChakraProvider resetCSS theme={theme}>
+<div style={{fontSize:"100%"}}>
+ <ChakraProvider resetCSS theme={theme}>
       <Flex h='100vh'>
         <Container
           m={0}
@@ -33,6 +33,8 @@ const Layout1 = ({ children }) => {
         </Container>
       </Flex>
     </ChakraProvider>
+    </div>
+
   )
 }
 
